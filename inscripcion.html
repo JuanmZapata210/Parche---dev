@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
 
 <body>
     <a href="#contenido">Saltar al contenido</a>
+    <h1>Inscripcion - Parche Dev 2026</h1>
     <header>
         <a href="index.html">Parche Dev 2026</a>
         <nav>
@@ -25,11 +26,160 @@
     </header>
 
     <main id="contenido">
+        <h2>Inscripcion</h2>
+        <p>La entrada es gratuita y los cupos son limitados. Completa el formulario para reservar el tuyo. Los campos
+            marcados con * son obligatorios.</p>
+        <br>
+        <h3>Ingresa tus datos</h3>
 
+        <form action="gracias.html" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <section>
+                    <label for="nombre">Ingresa tu nombre: *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </section>
+                <section>
+                    <label for="email">Ingresa tu correo electronico: *</label>
+                    <input type="email" id="email" name="email" required>
+                </section>
+                <section>
+                    <label for="celular">Celular (10 dígitos, empieza por 3)</label>
+                    <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" maxlength="10"
+                        inputmode="numeric" title="10 dígitos, empieza por 3">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ciudad *</legend>
+                <section>
+                    <input type="radio" id="ciudad-medellin" name="ciudad" value="medellin" required>
+                    <label for="ciudad-medellin">Medellin</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-bello" name="ciudad" value="bello">
+                    <label for="ciudad-bello">Bello</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-itagui" name="ciudad" value="itagui">
+                    <label for="ciudad-itagui">Itagui</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-envigado" name="ciudad" value="envigado">
+                    <label for="ciudad-envigado">Envigado</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-sabaneta" name="ciudad" value="sabaneta">
+                    <label for="ciudad-sabaneta">Sabaneta</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-la-estrella" name="ciudad" value="la-estrella">
+                    <label for="ciudad-la-estrella">La Estrella</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-caldas" name="ciudad" value="caldas">
+                    <label for="ciudad-caldas">Caldas</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-copacabana" name="ciudad" value="copacabana">
+                    <label for="ciudad-copacabana">Copacabana</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-girardota" name="ciudad" value="girardota">
+                    <label for="ciudad-girardota">Girardota</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-barbosa" name="ciudad" value="barbosa">
+                    <label for="ciudad-barbosa">Barbosa</label>
+                </section>
+                <section>
+                    <input type="radio" id="ciudad-otra" name="ciudad" value="otra">
+                    <label for="ciudad-otra">Otra</label>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En qué momento estás? *</legend>
+                <section>
+                    <input type="radio" id="momento-empezando" name="momento" value="empezando" required>
+                    <label for="momento-empezando">Estoy empezando a programar</label>
+                </section>
+                <section>
+                    <input type="radio" id="momento-medio" name="momento" value="medio">
+                    <label for="momento-medio">Ya programo, pero no trabajo en tecnología</label>
+                </section>
+                <section>
+                    <input type="radio" id="momento-avanzado" name="momento" value="avanzado">
+                    <label for="momento-avanzado">Trabajo en tecnología</label>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Qué temas te interesan?</legend>
+                <section>
+                    <input type="checkbox" id="tema-desarrollo" name="tema" value="desarrollo">
+                    <label for="tema-desarrollo">Desarrollo web</label>
+                </section>
+                <section>
+                    <input type="checkbox" id="tema-datos" name="tema" value="datos">
+                    <label for="tema-datos">Datos y SQL</label>
+                </section>
+                <section>
+                    <input type="checkbox" id="tema-accesibilidad" name="tema" value="accesibilidad">
+                    <label for="tema-accesibilidad">Accesibilidad</label>
+                </section>
+                <section>
+                    <input type="checkbox" id="tema-python" name="tema" value="python">
+                    <label for="tema-python">Python</label>
+                </section>
+                <section>
+                    <input type="checkbox" id="tema-despliegue" name="tema" value="despliegue">
+                    <label for="tema-despliegue">Despliegue en la nube</label>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agenda</legend>
+                <section>
+                    <input type="checkbox" id="taller-bot" name="taller" value="bot">
+                    <label for="taller-bot">Quiero inscribirme al taller “Tu primer bot con Python” (30 cupos, trae tu
+                        computador)</label>
+                </section>
+                <section>
+                    <label for="talla">Talla de camiseta</label>
+                    <select id="talla" name="talla">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </section>
+            </fieldset>
+            <br>
+
+            <section>
+                <label for="comentarios">Deja tus comentarios: *</label>
+                <textarea id="comentarios" name="comentarios" maxlength="300" rows="5" required></textarea>
+            </section>
+            <section>
+                <input type="checkbox" id="acepto-conducta" name="conducta" value="acepto" required>
+                <label for="acepto-conducta">
+                    Acepto el <a href="conducta.html">código de conducta</a> del evento *
+                </label>
+            </section>
+            <br>
+            <section>
+                <button type="submit">Reservar mi cupo</button>
+            </section>
+        </form>
     </main>
+
     <footer>
         <address>
-            <p><strong>¿Preguntas? </strong><a href="mailto:correo.hola@parchedev.example">Escribanos a nuestro correo</a></p>
+            <p><strong>¿Preguntas? </strong><a href="mailto:correo.hola@parchedev.example">Escribanos a nuestro
+                    correo</a></p>
         </address>
         <p><strong>¿Preguntas? </strong>Escribenos a hola@parchedev.example</p>
         <p>Parche Dev 2026 · Medellín, Colombia</p>
