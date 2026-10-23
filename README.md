@@ -48,3 +48,8 @@ Con get los datos viajan dentro de la URL, y eso los expone en muchos lugares.
 ## Hecho por
 
 Juan Manuel Zapata Serna · [GitHub](https://github.com/JuanmZapata210)
+
+capturas evidencias: 
+- ![alt text](<img/evidencia index.png>)
+- ![alt text](<img/evidencia agenda.png>)
+- ![alt text](<img/evidencia inscripcion.png>)
